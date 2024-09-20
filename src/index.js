@@ -1,12 +1,3 @@
-/**
- * Welcome to Cloudflare Workers! This is your first worker.
- *
- * - Run `npm run dev` in your terminal to start a development server
- * - Open a browser tab at http://localhost:8787/ to see your worker in action
- * - Run `npm run deploy` to publish your worker
- *
- * Learn more at https://developers.cloudflare.com/workers/
- */
 import { buildRequest } from './webpush-cf';
 
 export default {
@@ -59,7 +50,7 @@ async function handleRequest(request, env) {
 // Handle CORS preflight requests
 function handleOptions(request, env) {
 	const headers = {
-		'Access-Control-Allow-Origin': 'https://ghaza-yad.pages.dev',
+		'Access-Control-Allow-Origin': 'https://food.codegeeks.ir/',
 		'Access-Control-Allow-Methods': 'POST, OPTIONS',
 		'Access-Control-Allow-Headers': 'Content-Type',
 		'Access-Control-Max-Age': '86400',
@@ -142,7 +133,7 @@ async function BroadcastMessage(payload, env) {
 // Helper function to set CORS headers
 function corsHeaders() {
 	return {
-		'Access-Control-Allow-Origin': 'https://ghaza-yad.pages.dev',
+		'Access-Control-Allow-Origin': 'https://food.codegeeks.ir/',
 		'Access-Control-Allow-Methods': 'POST, OPTIONS',
 		'Access-Control-Allow-Headers': 'Content-Type',
 	};
