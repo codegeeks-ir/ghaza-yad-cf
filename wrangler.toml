@@ -17,7 +17,7 @@ compatibility_flags = ["nodejs_compat"]
 # Note: Use secrets to store sensitive data.
 # - https://developers.cloudflare.com/workers/configuration/secrets/
 [triggers]
-crons = ["20 17 * * fri"]
+crons = ["30 14 * * wed" ]
 
 [vars]
 VAPID_PRIVATE_KEY = '{"kty":"EC","x":"ZhdadPmjtH30DMLNxA_TAakZsAFTDGn4F-TzdZ56pMc","y":"q_e0M6LiQhhM75MLsj21U39QgPI555gNNUG1UyMzx0Q","crv":"P-256","d":"9JwvB4bQ2y4F2HQy93q5R_jujgKGvvqpIQH9a5PJdRM"}'
