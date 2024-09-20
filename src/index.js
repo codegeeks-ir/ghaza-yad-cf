@@ -50,7 +50,7 @@ async function handleRequest(request, env) {
 // Handle CORS preflight requests
 function handleOptions(request, env) {
 	const headers = {
-		'Access-Control-Allow-Origin': 'https://food.codegeeks.ir/',
+		'Access-Control-Allow-Origin': 'https://food.codegeeks.ir',
 		'Access-Control-Allow-Methods': 'POST, OPTIONS',
 		'Access-Control-Allow-Headers': 'Content-Type',
 		'Access-Control-Max-Age': '86400',
@@ -133,7 +133,7 @@ async function BroadcastMessage(payload, env) {
 // Helper function to set CORS headers
 function corsHeaders() {
 	return {
-		'Access-Control-Allow-Origin': 'https://food.codegeeks.ir/',
+		'Access-Control-Allow-Origin': 'https://food.codegeeks.ir',
 		'Access-Control-Allow-Methods': 'POST, OPTIONS',
 		'Access-Control-Allow-Headers': 'Content-Type',
 	};
