@@ -14,7 +14,7 @@ export default {
 		const payload = JSON.stringify({
 			title: 'یادآوری رزرو غذا',
 			body: 'رزرو غذا یادت نره! از همین پایین وارد سایت شو و غذات رو رزرو کن',
-			url: 'https://food.uut.ac.ir',
+			url: 'http://food.uut.ac.ir',
 		});
 		ctx.waitUntil(BroadcastMessage(payload, env));
 	},
@@ -39,6 +39,7 @@ async function handleRequest(request, env) {
 			const payload = JSON.stringify({
 				title: 'این یک پیام آزمایشی است',
 				body: 'در صورت دریافت این نوتیفیکیشن فرایند فعال سازی با موفقیت انجام شده',
+				url: 'http://food.uut.ac.ir',
 			});
 			console.log(JSON.stringify(request));
 			const subscription = await request.json();
